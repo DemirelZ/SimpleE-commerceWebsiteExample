@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Üst Kısım -->
+  <header>
+    <h1>E-Commerce Website</h1>
+
+    <div id="searchBox">
+      <input type="text" id="searchInput" placeholder="Search Product">
+      <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+    </div>
+
+    <div>
+      <button id="basket">Basket</button>
+      <button>Sign up</button>
+      <button>Login</button>
+    </div>
+  </header>
+  <!--  Ana İçerik -->
+  <main>
+    <!-- Kategoriler -->
+    <section id="category-sec">
+      <h1>Categories</h1>
+      <div class="categories"></div>
+    </section>
+    <!-- Ürünler -->
+    <section>
+      <h1>Products</h1>
+      <div class="products"></div>
+    </section>
+    <div id="searchResults"></div>
+  </main>
+  <!-- Modal (Sepet Penceresi)-->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <div id="icon">
+        <img id="close" src="/images/e-close.png" />
+      </div>
+      <div id="list"></div>
+      <p id="total">
+        <span id="count">0 product</span> Total:
+        <span id="total-price">0</span> &#8378;
+      </p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
