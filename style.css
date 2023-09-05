@@ -65,6 +65,7 @@ section {
 }
 
 .categories {
+  background-color: rgba(209, 204, 204, 0.836);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
@@ -99,6 +100,7 @@ section {
   border-radius: 10px;
   font-weight: 600;
   box-shadow: 2px 2px 10px black;
+  cursor: pointer;
 }
 
 /* Ürünler Kısmı */
@@ -253,4 +255,14 @@ section {
 .modal #total span {
   color: rgb(0, 203, 0);
   font-weight: bold;
+}
+
+#searchResults{
+  color: red;
+  font-size: large;
+  font-weight: 800;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  
 }

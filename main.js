@@ -110,7 +110,7 @@ function displayResults(results) {
   //console.log(results.length);
   if (results.length === 0) {
     //console.log(results.length);
-    searchResults.innerHTML = "Sonuç bulunamadı.";
+    searchResults.innerHTML = "No matching results found for the word you searched for :(";
   } else {
     results.forEach((result) => {
       const resultElement = document.createElement("div");
@@ -190,7 +190,7 @@ function calculateTotal() {
 
   totalSpan.innerText = sum;
 
-  totalCount.innerText = amount + " " + "ürün";
+  totalCount.innerText = amount ;
 }
 
 function deleteItem(deleteid) {
